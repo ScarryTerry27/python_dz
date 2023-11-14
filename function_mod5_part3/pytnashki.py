@@ -76,7 +76,7 @@ class Pole:
         else:
             print(f'Вы сделали {self.count} ходов')
 
-        pole.show()
+        self.show()
 
     def check_win(self):
         mtx = list(range(1, 16)) + [0]
