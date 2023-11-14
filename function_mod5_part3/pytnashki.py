@@ -7,16 +7,11 @@ import random
 например 
 pole.step(7)'''
 
+
 class Cell:
-    def __init__(self, name, step = False):
+    def __init__(self, name, step=False):
         self.name = name
         self.step = False
-
-    def check_value(self, val):
-        if not isinstance(val, int):
-            raise TypeError('Аргумент должен быть положительным числом')
-        elif not 0 <= val < 4:
-            raise ValueError('Аргумент должен быть положительным числом от 0 до 3х включительно')
 
 
 class Pole:
