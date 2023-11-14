@@ -72,9 +72,9 @@ class Pole:
 
         self.count += 1
         if self.check_win():
-            print(f'Вы выиграли! Вы потратили для этого {self.count} ходов')
+            print(f'Вы выиграли! Кол-во ходов: {self.count}')
         else:
-            print(f'Вы сделали {self.count} ходов')
+            print(f'Кол-во ходов: {self.count}')
 
         self.show()
 
