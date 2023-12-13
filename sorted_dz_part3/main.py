@@ -44,7 +44,7 @@ def user_choice():
     '''))
     ret_list = merge_list(a, b) if not res-1 else merge_list(a, b)[::-1]
     for item in enumerate(ret_list):
-        if item [1] == res2:
+        if item[1] == res2:
             print(f'Индекс элемента {item[0]}')
             break
     else:
@@ -64,7 +64,7 @@ def find_binar(list_find, item):
     elem = len(list_find)//2
     if len(list_find) == 1 and item != list_find[0][1]:
         return 'Элемент не найден'
-    if item < list_find[elem][1]:
+    elif item < list_find[elem][1]:
         return find_binar(list_find[:elem], item)
     elif item > list_find[elem][1]:
         return find_binar(list_find[elem+1:], item)
